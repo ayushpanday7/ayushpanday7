@@ -1,0 +1,79 @@
+.infoContainer {
+    display: flex;
+    background-color: #fff;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+}
+
+.devInfo {
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8rem;
+    width: 100%;
+}
+
+#photo {
+    border-radius: 2rem;
+    height: 23rem;
+    margin-left: 3rem;
+}
+.devInfo div
+{
+    text-align: center;
+}
+.intro {
+    font-size: 6rem;
+    font-family: 'source code pro',monospace;
+}
+
+.name {
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.about
+{
+    width: 40vw;
+    font-family: 'source code pro',monospace;
+    font-size: 2rem;
+}
+
+.displayButton {
+    margin-right: 0.8rem;
+    margin-top: 2rem;
+    border: none;
+    padding: 0.8rem;
+    background-color: #fff;
+    border-radius: 3vw;
+    box-shadow: 0.1rem 0.1rem 0.4rem #f00;
+    transition-duration: 100ms;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.displayButton:hover {
+    transition-duration: 500ms;
+    background-color: #f00;
+    color: #fff;
+}
+
+@media (max-width: 1000px) {
+    .devInfo{
+        margin-left: 0.3rem;
+        flex-direction: column-reverse;
+    }
+    .about{
+        width: 100%;
+        padding: 2rem;
+    }
+    .infoContainer{
+        margin-top: 8rem;
+    }
+}
